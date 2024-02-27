@@ -1,7 +1,7 @@
 import pygame
 speed = 1
 pygame.init()
-win = pygame.display.set_mode((500, 500))
+win = pygame.display.set_mode((900, 900))
 x = 0
 y = x
 while True:
@@ -9,11 +9,11 @@ while True:
         if event.type == pygame.QUIT:
             exit()
 
-    if x >= 400 or x <= 100 or y >= 400 or y <= 100:
-        speed = 1
+    if x >= 60 or x <= 10 or y >= 60 or y <= 10:
+        speed = 25
         color = (255, 0, 0)
     else:
-        speed = 3
+        speed = 10
         color = (255, 255, 0)
 
     k = pygame.key.get_pressed()
